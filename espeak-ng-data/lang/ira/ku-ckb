@@ -1,0 +1,9 @@
+name Kurdish (ckb)
+// Central Kuridsh uses Arabic Alphabet
+language ku-ckb
+maintainer Hemin Qadir <hemina.qadir@gmail.com>
+status mature
+phonemes ku
+
+//words 1 48
+

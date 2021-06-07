@@ -12,7 +12,7 @@
 
 .group b
         b        b
-
+        
 .group c
         c        dZ
 
@@ -116,3 +116,281 @@
         ö        I:
         ü        y
         $        dUlar
+
+// Hemin 
+// replace Arabic  eastern  character numbers with Arabic western character numbers
+.replace
+     ٠       0
+     ۰       0
+     ۱       1
+     ١       1
+     ٢       2
+     ۲       2
+     ٣       3
+     ۳       3
+     ٤       4
+     ۴       4
+     ٥       5
+     ۵       5
+     ٦       6
+     ۶       6
+     ٧       7
+     ۷       7
+     ٨       8
+     ۸       8
+     ٩       9
+     ۹       9
+     ،       ,
+     ؛       ;  
+     ٬       ،
+     ٫       ،
+     ٪       %
+
+.L02 ی ا ي ێ و ە   // front vowels
+
+// all Arabic characters
+.L03  ـ « » ض ص ث ق ڤ ف غ ع ه خ چ ح ج ش س ي ب ڵ ل ت ن م ك ظ ط ژ ز ڕ ر ذ د ئ و ۆ ة ێ ی ؤ إ ا أ ء پ گ
+
+// group of digits
+.L04 0 1 2 3 4 5 6 7 8 9
+
+.group آ
+         آ           ?a:
+
+.group ا
+         ا           a
+   
+.group أ
+         أ           ?        // Carried Hamza
+
+.group إ
+         إ           ?        // Carried Hamza
+
+.group ئ
+         ئ           ?
+         ئ (_        ?         // Carried Hamza
+      _) ئ           ?
+
+.group ب
+         ب           b
+         ب (_        b 
+      _) ب           b         
+
+.group پ
+         پ           p
+         پ (_        p
+      _) پ           p
+
+.group ت
+         ت           t
+         ت _(        t
+      _) ت           t
+
+.group ث
+         ث           T
+         ث _(        T
+      _) ث           T
+
+.group ج
+         ج           dZ
+         ج _(        dZ
+      _) ج           dZ
+
+.group چ
+         چ           tS
+         چ _(        tS
+      _) چ           tS
+
+.group ح
+         ح           H
+         ح _(        H
+      _) ح           H
+
+.group خ
+         خ           x
+         خ _(        x
+      _) خ           x
+
+.group د
+         د           d
+         د _(        d
+      _) د           d
+
+.group ذ
+         ذ           D
+         ذ _(        D
+      _) ذ           D
+
+.group ر
+         ر           r
+         ر _(        r
+      _) ر           r
+
+.group ڕ
+         ڕ           r:
+         ڕ _(        r:
+      _) ڕ           r:
+
+.group ز
+         ز           z
+         ز _(        z
+         ز           z
+
+.group ژ
+         ژ           Z
+         ژ _(        Z
+      _) ژ           Z
+
+.group س
+         س           s
+         س _(        s
+      _) س           s
+
+.group ش
+         ش           S
+         ش _(        S
+      _) ش           S
+
+.group ص
+         ص           s[
+         ص _(        s[
+      _) ص           s[
+
+.group ض
+         ض           dH
+         ض _(        dH
+      _) ض           dH
+
+.group ط
+         ط           t[
+         ط _(        t[
+      _) ط           t[
+
+.group ظ
+         ظ           Z:
+         ظ _(        Z:
+      _) ظ           Z:
+
+.group ع
+         ع           A
+         ع _(        A
+         ع           A
+
+.group غ
+         غ           gH
+         غ _(        gH
+      _) غ           gH
+
+.group ف
+         ف           f
+         ف _(        f
+      _) ف           f
+
+.group ڤ
+         ڤ           v
+         ڤ _(        v
+      _) ڤ           v
+ 
+.group ق
+         ق           q
+         ق _(        q
+      _) ق           q
+
+.group ك
+         ك           k
+         ك _(        k
+      _) ك           k
+
+.group ک
+         ک           k
+         ک _(        k
+      _) ک           k
+
+.group گ
+         گ           g
+         گ _(        g
+      _) گ           g
+
+.group ل
+         ل           l
+         ل _(        l
+      _) ل           l
+
+.group ڵ
+         ڵ           l:
+         ڵ _(        l:
+      _) ڵ           l:
+
+.group م
+         م           m
+         م _(        m
+      _) م           m
+
+.group ن
+         ن           n
+         ن _(        n
+      _) ن           n
+
+.group ه
+         ه           h
+         ه _(        h
+     _)  ه           h
+
+.group ە
+         ە           E
+         ە _(        E
+      _) ە           E
+
+.group و
+         و           w
+         و _(        w
+      _) و           w
+
+.group وو
+         وو          w:
+         وو _(       w:
+      _) وو          w:
+
+.group ۆ
+         ۆ           o
+         ۆ _(        o
+      _) ۆ           o
+ 
+.group ي
+         ي           i
+         ي _(        i
+         ي (L01      j
+    (L01 ي           j
+      _) ي           j
+
+.group ى                      
+         ى           i
+         ى _(        i
+         ى (L01      j
+    (L01 ى           j
+      _) ى           j
+
+.group ێ                      
+         ێ           e
+         ێ _(        e
+      _) ێ           e
+
+.group ء
+         ء           ?
+         ء _(        ?
+      _) ء           ?
+
+.group ؤ
+         ؤ           ?
+         ؤ _(        ?
+      _) ؤ           ?         
+
+.group ة
+         ة           t
+         ة _(        t
+      _) ة           t
+
+// Other diacritics
+.group
+         ـ  // tatweel
+

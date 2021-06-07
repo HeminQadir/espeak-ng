@@ -2,47 +2,241 @@
 // This file is UTF8 encoded 
 // Spelling-to-phoneme words for Kurdish
 
+// Kurdish alphabet
+_آ       alf
+_ا       alf
+_ب       ba?
+_پ       pa?
+_ت       ta?
+_ث       Ta?
+_ج       dZim
+_چ       tS?
+_ح       Ha?
+_خ       Xa?
+_د       dal
+_ذ       Dal
+_ر       ra?
+_ڕ       r:a?
+_ز       za?
+_ژ       Za?
+_س       sin
+_ش       Sin
+_ص       s[ad
+_ض       dHad
+_ط       t[a?
+_ظ       Z:a?
+_ع       Ain
+_غ       gHajn
+_ف       fa?
+_ق       qaf
+_ق       qaf
+_ڤ       va?
+_ك       kaf
+_ک       kaf
+_گ       gaf
+_ل       lam
+_ڵ       l:a?
+_م       mim
+_ن       nun
+_و       waw
+_ۆ       o
+_وو      waw
+_ه       ha?
+_ە       Eh
+_ي       ja?
+_ی       ja?
+_ێ       ?e
+_،       fa:s[ilah
+_؛       nuqt[atah||fa:s[lah
+_ـ       tat[wi:l
+_ئ       alif||Ala||?alja:?
+_ؤ       hamzah||Ala||?alwa:?
+_إ       hamzah||taHta||?alwa:?
+_أ       ?alif
+_ء       hamzah
+_ة       ta?||marbu:t[ah
+_ةً       tan
+_
 
-_0	s'Ifr
-_1	j'Ek
-_2	d'U
-_3	s'e
-_4	dZ'ar
-_5	p'endZ
-_6	S'ES
-_7	h'Eft
-_8	h'EjSt
-_9	n'Eh
-_10	d'Eh
-_11	jazd'E#
-_12	danzd'E#
-_13	sezd'E#
-_14	tSaRd'E#
-_15	panzd'E#
-_16	Sanzd'E#
-_17	hIvd'Eh
-_18	hIZd'Eh
-_19	nozd'Eh
-_2X	b'Ist
-_3X	s'i
-_4X	tS'Il
-_5X	pendZ'i
-_6X	S'est
-_7X	hEft'e
-_8X	heSt'e
-_9X	n'od
-_0C	s'Ed
-_1C	s'Ed
-_0M1	hEz'ar
-_1M1	hEz'ar
-_0M2	mIl'jon
-_1M2	mIl'jon
+// When letters entered one by one
+آ       alf                        $atend
+ا       alf                        $atend
+ب       ba?                        $atend
+پ       pa?                        $atend
+ت       ta?                        $atend
+ث       Ta?                        $atend
+ج       dZim                       $atend
+چ       tS?                        $atend
+ح       Ha?                        $atend
+خ       Xa?                        $atend
+د       dal                        $atend
+ذ       Dal                        $atend
+ر       ra?                        $atend
+ڕ       r:a?                       $atend
+ز       za?                        $atend
+ژ       Za?                        $atend      
+س       sin                        $atend
+ش       Sin                        $atend
+ص       s[ad                       $atend
+ض       dHad                       $atend
+ط       t[a?                       $atend
+ظ       Z:a?                       $atend
+ع       Ajn                        $atend
+غ       gHajn                      $atend
+ف       fa?                        $atend
+ق       qaf                        $atend
+ڤ       va?                        $atend
+ك       kaf                        $atend
+ک       kaf                        $atend
+گ       gaf                        $atend
+ل       lam                        $atend
+ڵ       l:a?                       $atend
+م       mim                        $atend
+ن       nun                        $atend
+و       waw                        $atend
+وو      waw                        $atend
+ه       ha?                        $atend
+ي       ja?                        $atend
+ی       ja?                        $atend
+،       farizE                      $atend
+؛       xal:||farizE                $atend
+ـ       tatwil                      $atend
+ئ       alf                         $atend
+ؤ       hamzah                      $atend
+إ       hamzah                      $atend
+أ       ?alf                        $atend
+ء       hamzah                      $atend
 
-_0and	_u
-_dpt	_xal
-_??	tipa
+
+// numbers 
+_0	sfr
+_1	jEk
+_2	dw:
+_3	se
+_4	tSar
+_5	pendZ
+_6	SES
+_7	hEft
+_8	hESt
+_9	noh
+_10	dEh
+_11	jazdEh
+_12	dwanzdEh
+_13	sezdEh
+_14	tSaRdEh
+_15	pazdEh
+_16	SazdEh
+_17	hEvdEh
+_18	hEZdEh
+_19	nozdEh
+_2X	bist
+_3X	si
+_4X	tSl
+_5X	pEndZa
+_6X	Sest
+_7X	hEfte
+_8X	heSte
+_9X	nEwEd
+_0C	sEd
+_1C	sEd
+_2C	dw:sEd
+_3C	sesEd
+_4C	tSarsEd
+_5C	pendZsEd
+_6C	SESsEd
+_7C	hEftsEd
+_8C	hEStsEd
+_9C	noesEd
+_0M1	hEzar
+_1M1	jEkhEzar
+_2M1    dw:hEzar
+_3M1    sehEzar
+_4M1    tZarhEzar
+_5M1    endZhEzar
+_6M1    SEShEzar
+_7M1    hEfthEzar
+_8M1    hESthEzar
+_9M1    nohEzar
+_10M1   dEhEzar
+_0M2	mIljon
+_1M2	jEkmIljon
+_2M2    dw:mIljon
+_3M2    semIljon
+_4M2    tZarmIljon
+_5M2    pendZmIljon
+_6M2    SESmIljon
+_7M2    hEftmIljon
+_8M2    hEStmIljon
+_9M2    nomIljon
+_10M2   dEmIljon
+_0M3    miljar
+_1M3    jEkmiljar
+_2M3    dw:miljar
+_3M3    semiljar
+_4M3    tSarmiljar
+_5M3    pendZmiljar
+_6M3    SESmiljar
+_7M3    hEftmiljar
+_8M3    hEStmiljar
+_9M3    nomiljar
+_10M3   dEmiljar
+
+// Some Special characters
+_0and	_w
+_dpt	_xal:
+_??	    prsjar
+_roman  romani
 _cap	mezin   // or "ya mezin" after the letter
 
+
+// character names
+÷       dabES
+×       dZaran
+؟       niSanEj||psjar
+!       niSanEj||sErsUrman
+$       dolar
+%       lEsEda
+(       kEwanEj||krawE
+)       kEwanEj||daxraw
+*       ?EsterEh
+-       kEm
++       ko
+/.      xal:
+/:      dw:xal
+<       btSw:ktr
+=       jEksan
+>       gEwrEtr
+{       kEwanEj||krawE
+}       kEwanEj||daxraw
+...     xal:xal:
+[	    kEwanEj||krawE
+]	    kEwanEj||daxraw
+»	    kEwanEj||daxraw
+«	    kEwanEj||daxraw
+
+// function words
+
+û	$u+ $pause
+a	$u+
+ê	$u+	
+
+// Special words
+الرحمن  ar:ahman
+الله    ?al:ah
+اللهم   ?al:ahumma
+کگ      kilo||gHram
+كگم     kilo||gHram
+تن      t[un
+// Units below conflict with single letter word
+// م    mEtr
+// پ    prsjar
+// و    wEl:am
+د.ع     dinar||Aeraqi
+$       dolar
+€       joro
+£       dZunajh
+¥       juwan
+بسم الله      bismilah
 
 // characters
 // letter names
